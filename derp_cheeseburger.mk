@@ -31,7 +31,7 @@ IS_PHONE := true
 TARGET_MINIMAL_APPS := false
 TARGET_INCLUDE_STOCK_ARCORE := true
 
-PRODUCT_NAME := aosip_cheeseburger
+PRODUCT_NAME := derp_cheeseburger
 PRODUCT_DEVICE := cheeseburger
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -52,4 +52,4 @@ BUILD_FINGERPRINT := google/walleye/walleye:8.1.0/OPM1.171019.021/4565141:user/r
 TARGET_VENDOR := oneplus
 
 # Official-ify
-AOSIP_BUILDTYPE := Official
+DERP_BUILDTYPE := Official
