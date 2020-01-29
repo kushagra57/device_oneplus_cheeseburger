@@ -53,3 +53,7 @@ TARGET_VENDOR := oneplus
 
 # Official-ify
 DERP_BUILDTYPE := Official
+
+# Device maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.derp.maintainer=David Setiawan
