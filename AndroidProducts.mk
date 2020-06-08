@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_cheeseburger.mk
+    $(LOCAL_DIR)/aosip_cheeseburger.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_cheeseburger-user \
-    derp_cheeseburger-userdebug \
-    derp_cheeseburger-eng
+    aosip_cheeseburger-user \
+    aosip_cheeseburger-userdebug \
+    aosip_cheeseburger-eng
