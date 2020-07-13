@@ -24,6 +24,9 @@ $(call inherit-product, device/oneplus/cheeseburger/device.mk)
 # Inherit some common AOSiP stuff.
 $(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
+# Inherit Google Play System Update stuff
+$(call inherit-product-if-exists, vendor/google/psu/google-psu.mk)
+
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
