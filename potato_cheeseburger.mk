@@ -27,6 +27,9 @@ $(call inherit-product, vendor/potato/config/common_full_phone.mk)
 # Inherit Google Play System Update stuff
 $(call inherit-product-if-exists, vendor/google/psu/google-psu.mk)
 
+# Installs gsi keys into ramdisk, to boot a GSI with verified boot.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
+
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
@@ -44,8 +47,9 @@ TARGET_VENDOR_DEVICE_NAME := OnePlus5
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=OnePlus5 PRODUCT_NAME=OnePlus5
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="walleye-user 8.1.0 OPM1.171019.021 4565141 release-keys"
+    PRIVATE_BUILD_DESC="OnePlus5-user 10 QKQ1.191014.012 2006012143 release-keys"
 
-BUILD_FINGERPRINT := google/walleye/walleye:8.1.0/OPM1.171019.021/4565141:user/release-keys
+BUILD_FINGERPRINT := OnePlus/OnePlus5/OnePlus5:10/QKQ1.191014.012/2006012143:user/release-keys
+
 
 TARGET_VENDOR := oneplus
